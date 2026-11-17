@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T22:30:18+05:30",
+  "title": "Design System: Snack Overflow",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Pantry Violet",
+        "canonical": "#6258d9",
+        "tonalRamp": ["#09071e", "#1c174d", "#341498", "#4b3ab9", "#645adc", "#7f7afe", "#b3b7fa", "#ebedff"]
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Deep Violet",
+        "canonical": "#4f45c0",
+        "tonalRamp": ["#08081e", "#1c184c", "#321896", "#493cb7", "#625cd9", "#7d7cfc", "#b2b7f9", "#ebedfe"]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Cool Mist",
+        "canonical": "#f7f7fb",
+        "tonalRamp": ["#0b0b0d", "#212124", "#3a3a3d", "#555558", "#717175", "#8f8f92", "#bdbdc1", "#eeeef2"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White Surface",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#0b0b0b", "#222222", "#3a3a3a", "#555555", "#717171", "#8f8f8f", "#bebebe", "#eeeeee"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Pantry Ink",
+        "canonical": "#24233b",
+        "tonalRamp": ["#0a081d", "#1f1e36", "#383751", "#52526d", "#6e6e8b", "#8c8caa", "#babada", "#ecedfd"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Lavender Gray",
+        "canonical": "#85849a",
+        "tonalRamp": ["#0a0918", "#211f31", "#39384b", "#545367", "#706f84", "#8d8ca3", "#bcbbd2", "#ededf9"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Soft Divider",
+        "canonical": "#e9e9f0",
+        "tonalRamp": ["#0b0b0f", "#212126", "#3a3a3f", "#55555a", "#717177", "#8e8e95", "#bdbdc4", "#eeeef5"]
+      },
+      "plum-panel": {
+        "role": "secondary",
+        "displayName": "Deep Plum Panel",
+        "canonical": "#292747",
+        "tonalRamp": ["#0a0622", "#1f1d3c", "#373657", "#525174", "#6e6d92", "#8b8bb1", "#b9b9e2", "#ededf8"]
+      },
+      "green": {
+        "role": "tertiary",
+        "displayName": "Stock Green",
+        "canonical": "#309265",
+        "tonalRamp": ["#020f07", "#15261d", "#1c4430", "#385f4a", "#1f8559", "#45a476", "#77d4a4", "#cffbe1"]
+      },
+      "orange": {
+        "role": "secondary",
+        "displayName": "Pantry Orange",
+        "canonical": "#b87932",
+        "tonalRamp": ["#130801", "#2b1f12", "#4f3417", "#6c4f32", "#9f6113", "#bf7f39", "#f1ae69", "#fdebdb"]
+      },
+      "warning": {
+        "role": "secondary",
+        "displayName": "Stock Warning",
+        "canonical": "#bd8219",
+        "tonalRamp": ["#0f0a05", "#2b1f0f", "#4e350c", "#6a5029", "#886c45", "#bd8219", "#eeb154", "#fcecd7"]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Soft Danger",
+        "canonical": "#cf6470",
+        "tonalRamp": ["#170507", "#3c1117", "#700523", "#912c3d", "#b24a58", "#d46975", "#e6acb0", "#faeaeb"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Login and registration headlines."
+      },
+      "headline": {
+        "displayName": "Dashboard headline",
+        "purpose": "Main application page heading."
+      },
+      "title": {
+        "displayName": "Component title",
+        "purpose": "Snack and section titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Supporting copy and operational details."
+      },
+      "label": {
+        "displayName": "Eyebrow label",
+        "purpose": "Compact section metadata and category labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-resting",
+        "value": "0 5px 16px rgba(45, 43, 79, .025)",
+        "purpose": "Quiet separation for white inventory and analysis cards."
+      },
+      {
+        "name": "interactive-lift",
+        "value": "0 12px 35px rgba(37, 35, 75, .055)",
+        "purpose": "Hover emphasis on interactive cards."
+      },
+      {
+        "name": "dialog",
+        "value": "0 24px 70px rgba(27, 26, 50, .2)",
+        "purpose": "Separate the snack editor modal from the page."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-transition",
+        "value": ".16s ease",
+        "purpose": "Button background and border feedback."
+      },
+      {
+        "name": "card-transition",
+        "value": ".18s ease",
+        "purpose": "Subtle hover lift on snack cards."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "mobile",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action with a violet fill and compact rounded shape.",
+      "html": "<button class=\"ds-btn-primary\">Consume</button>",
+      "css": ".ds-btn-primary { min-height: 39px; padding: 9px 13px; color: #fff; background: var(--primary); border: 1px solid transparent; border-radius: 9px; font: 700 12px Segoe UI, Helvetica Neue, Arial, sans-serif; transition: background .16s ease, transform .16s ease; } .ds-btn-primary:hover:not(:disabled) { background: var(--primary-dark); } .ds-btn-primary:focus-visible { outline: 3px solid rgba(98, 88, 217, .34); outline-offset: 2px; } .ds-btn-primary:active:not(:disabled) { transform: translateY(1px); } .ds-btn-primary:disabled { cursor: not-allowed; opacity: .58; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting administrative action on a pale violet surface.",
+      "html": "<button class=\"ds-btn-secondary\">Restock</button>",
+      "css": ".ds-btn-secondary { min-height: 39px; padding: 9px 13px; color: #514bb1; background: #f1f0ff; border: 1px solid #e7e5ff; border-radius: 9px; font: 700 12px Segoe UI, Helvetica Neue, Arial, sans-serif; transition: background .16s ease, transform .16s ease; } .ds-btn-secondary:hover:not(:disabled) { background: #e8e6ff; } .ds-btn-secondary:focus-visible { outline: 3px solid rgba(98, 88, 217, .34); outline-offset: 2px; } .ds-btn-secondary:active:not(:disabled) { transform: translateY(1px); }"
+    },
+    {
+      "name": "Snack Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Inventory item with status, quantity, voting, and role-specific actions.",
+      "html": "<article class=\"ds-snack-card\"><span class=\"ds-snack-status\">Stocked</span><h3>Snack name</h3><p>12 packets available</p><button class=\"ds-snack-action\">Vote</button></article>",
+      "css": ".ds-snack-card { min-width: 0; padding: 17px; color: #24233b; background: #fff; border: 1px solid #e9e9f0; border-radius: 13px; box-shadow: 0 5px 16px rgba(45, 43, 79, .025); transition: box-shadow .18s ease, transform .18s ease; } .ds-snack-card:hover { box-shadow: 0 12px 35px rgba(37, 35, 75, .055); transform: translateY(-2px); } .ds-snack-card h3 { margin: 8px 0; font: 700 16px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-snack-card p { color: #85849a; font: 400 11px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-snack-status { display: inline-flex; padding: 6px 8px; color: #36825d; background: #eaf7ef; border-radius: 30px; font: 700 10px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-snack-action { padding: 6px 8px; color: #6258d9; background: #fff; border: 1px solid #eeedf3; border-radius: 8px; font: 700 11px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-snack-action:focus-visible { outline: 3px solid rgba(98, 88, 217, .34); outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Search control for live, server-filtered snack inventory.",
+      "html": "<label class=\"ds-search\"><span>Search snacks</span><input type=\"search\" placeholder=\"Find a snack\"></label>",
+      "css": ".ds-search { display: grid; gap: 6px; color: #55546b; font: 700 12px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-search input { width: 100%; height: 42px; padding: 0 11px; color: #24233b; background: #fff; border: 1px solid #e8e7ee; border-radius: 9px; font: 400 12px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-search input:focus-visible { border-color: #aaa5e9; outline: 3px solid rgba(98, 88, 217, .09); outline-offset: 1px; } .ds-search input::placeholder { color: #a3a2b1; }"
+    },
+    {
+      "name": "Sidebar Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Quiet desktop navigation with a pale violet active state.",
+      "html": "<nav class=\"ds-sidebar-nav\"><a class=\"ds-sidebar-link ds-active\" href=\"#overview\">Overview</a><a class=\"ds-sidebar-link\" href=\"#inventory\">Inventory</a></nav>",
+      "css": ".ds-sidebar-nav { display: grid; gap: 4px; padding: 8px; background: #fff; } .ds-sidebar-link { display: flex; align-items: center; min-height: 40px; padding: 12px 13px; color: #6f6e82; border-radius: 10px; font: 600 13px Segoe UI, Helvetica Neue, Arial, sans-serif; text-decoration: none; } .ds-sidebar-link:hover { color: #6258d9; background: #f8f8fc; } .ds-sidebar-link.ds-active { color: #6258d9; background: #f0efff; } .ds-sidebar-link:focus-visible { outline: 3px solid rgba(98, 88, 217, .34); outline-offset: 2px; }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Standard form field with visible focus and restrained border.",
+      "html": "<label class=\"ds-field\"><span>Snack name</span><input type=\"text\" value=\"Pretzels\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; color: #57566b; font: 600 12px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-field input { width: 100%; height: 42px; padding: 0 11px; color: #24233b; background: #fff; border: 1px solid #e5e4ec; border-radius: 8px; font: 400 13px Segoe UI, Helvetica Neue, Arial, sans-serif; } .ds-field input:focus-visible { border-color: #a6a0e9; outline: 3px solid rgba(98, 88, 217, .09); outline-offset: 1px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pantry Ledger",
+    "overview": "Snack Overflow is a practical, shared pantry tool. Its current interface prioritizes quick scanning, clear inventory status, and straightforward member and administrator actions. The visual implementation is professional, calm, and efficient, with compact labels, readable hierarchy, and light surfaces that keep the live pantry information central.\n\nThis document records the visual system that is actually implemented in frontend/src/style.css. The user has also specified a future design direction: warm neutral surfaces, deep navy navigation, and orange and green accents. That direction is not yet implemented and is not represented by the normative tokens below. Do not apply a redesign as part of setup or unrelated work.",
+    "keyCharacteristics": [
+      "Compact, task-focused dashboard hierarchy.",
+      "Cool near-white surfaces with a violet primary accent.",
+      "Subtle borders and low-elevation cards.",
+      "Responsive navigation and inventory grids.",
+      "Existing UI behavior and live API data remain authoritative."
+    ],
+    "rules": [
+      {
+        "name": "The Current-Token Rule",
+        "body": "Keep these values aligned with the existing CSS. The future direction—warm neutrals, deep navy navigation, and orange/green accents—has no settled hex values and must not be presented as implemented styling.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do treat the frontmatter values as the current implementation's tokens.",
+      "Do preserve real API data, role-specific actions, and the existing application flows during visual work.",
+      "Do honor warm neutrals, deep navy navigation, and orange/green accents when a future visual redesign is explicitly requested; settle exact values as part of that work."
+    ],
+    "donts": [
+      "Don't claim the future palette is already implemented or silently change the current CSS during setup.",
+      "Don't replace live dashboard data with sample values or bypass backend authorization.",
+      "Don't remove responsive breakpoints, visible stock-state text, or keyboard focus indicators."
+    ]
+  }
+}
