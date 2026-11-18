@@ -293,3 +293,7 @@ npm run build
 
 - There is no password-reset flow, token-refresh/revocation endpoint, vote-history log, or date-range analytics; favorite rankings use current votes and stock analytics are all-time totals.
 - The frontend is configured for local development by default; production hosting, HTTPS, secret management, and deployment configuration must be supplied by the deployer.
+
+video link : GitHub Repository: https://github.com/Arunmurugappan0/snack-overflow
+
+Screen Recording: https://drive.google.com/file/d/1xrGj3Yi1lVEMhIbG4QFsKiKPOiUua2P2/view?usp=sharing
